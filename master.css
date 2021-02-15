@@ -1,0 +1,15 @@
+.navbar-brand{
+  margin-right: 150px;
+}
+
+.jumbo{
+  background: url("img/bg-blue.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.form{
+  background-color: white;
+  border-radius: 20px;
+}
