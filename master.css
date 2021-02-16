@@ -85,3 +85,48 @@
   padding: 40px;
   font-weight: 700;
 }
+
+
+#deploy h2{
+  font-weight: 700;
+}
+
+#deploy p{
+  color: #5B6987;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.items{
+  margin-top: 50px;
+}
+
+
+.vertical-navbar{
+  margin-left: 20%;
+  border-left: 2px solid darkgrey;
+}
+
+.vertical-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+
+.vertical-navbar li {
+  display: block;
+  color: #5B6987;
+  font-weight: 600;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.cards{
+  margin-top: 15px;
+}
+
+.cards h4{
+  color: rgb(3, 27, 78);
+  font-weight: 700;
+}
