@@ -31,7 +31,7 @@
 }
 
 .jumbo{
-  background: url("img/bg-blue.svg");
+  background: url("img/bg-sea.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
@@ -57,7 +57,7 @@
 .form-card{
   height: 100%;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 
 }
 
@@ -99,6 +99,7 @@
 
 .items{
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -130,3 +131,34 @@
   color: rgb(3, 27, 78);
   font-weight: 700;
 }
+
+
+#carousel{
+  background-color: #F3F5F9;
+}
+
+
+#carousel h2{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(3, 27, 78);
+}
+
+#carousel p, #carousel span{
+  line-height: 3.5;
+  font-weight: 700;
+  color: #5B6987;
+}
+
+#carousel img{
+  width: 100%;
+}
+
+
+
+
+
+
+/*mediaquery mobile: azzerare margine vertical nav*/
