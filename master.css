@@ -1,3 +1,31 @@
+
+.navbar-collapse.collapse{
+  display: none !important;
+}
+
+.navbar-toggle{
+  display: block;
+}
+
+@media all and (min-width: 992px){
+
+.navbar-collapse.collapse{
+  display: block !important;
+}
+
+.navbar-toggle{
+  display: none;
+}
+}
+
+#my-nav{
+  margin-bottom: 0;
+}
+
+.my-navbar{
+  margin-bottom: 0;
+}
+
 .navbar-brand{
   margin-right: 150px;
 }
@@ -6,10 +34,54 @@
   background: url("img/bg-blue.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 50px;
+  height: 100%;
 }
 
+.jumbo-text{
+  color: white;
+  line-height: 1.8;
+  height: 100%;
+}
 
-.form{
+.jumbo-text h1{
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.jumbo-text p{
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.form-card{
+  height: 100%;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
+
+}
+
+.form-card .btn{
+  width: 100%;
+}
+
+.form-card .my-form{
+  margin-top: 10px;
+}
+
+#brands{
+  background-color: #F3F5F9;
+  color: #5B6987;
+}
+
+#brands h3{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 40px;
+}
+
+#brands p{
+  padding: 40px;
+  font-weight: 700;
 }
