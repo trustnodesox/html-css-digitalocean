@@ -30,6 +30,7 @@
   margin-right: 150px;
 }
 
+
 .jumbo{
   background: url("img/bg-sea.svg");
   background-repeat: no-repeat;
@@ -87,14 +88,18 @@
 }
 
 
-#deploy h2{
+.title h2{
   font-weight: 700;
 }
 
-#deploy p{
+.title p{
   color: #5B6987;
   font-weight: 700;
   line-height: 1.8;
+}
+
+.title{
+  margin-top: 50px;
 }
 
 .items{
@@ -102,6 +107,21 @@
   margin-bottom: 50px;
 }
 
+
+.cards{
+  margin-top: 15px;
+}
+
+.cards h4{
+  color: rgb(3, 27, 78);
+  font-weight: 700;
+}
+
+.cards p{
+  color: #5B6987;
+  font-weight: 700;
+  line-height: 1.8;
+}
 
 .vertical-navbar{
   margin-left: 20%;
@@ -123,13 +143,10 @@
   text-decoration: none;
 }
 
-.cards{
-  margin-top: 15px;
-}
-
-.cards h4{
-  color: rgb(3, 27, 78);
-  font-weight: 700;
+.vertical-navbar li:active{
+  background-color: #81C9F9;
+  color: white;
+  border-radius: 4px;
 }
 
 
@@ -153,12 +170,73 @@
 }
 
 #carousel img{
-  width: 100%;
+  width: 85%;
+}
+
+.box{
+  position: relative;
+}
+
+
+.arrow{
+  display: inline-block;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  color: darkgrey;
+}
+
+.arrow:active{
+  color: black;
+}
+
+.carousel-selector{
+  color: #0069FF;
+  padding: 2px;
+}
+
+#regions{
+
+  background-color: #031B4E;
+  background-image: url("img/bg-map.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#regions h2{
+  color: white;
+}
+
+#regions p{
+  color: white;
+  font-weight: 500;
+}
+
+table th{
+    font-weight: normal;
+}
+
+ .my-table{
+  color: white;
+}
+
+ .my-table .large{
+  width: 65%;
 }
 
 
 
+.my-table>tbody>tr>th{
+  padding: 15px!important;
+}
 
+.my-table th:first-of-type{
+  font-weight: 700;
+}
 
+.my-table tr:first-of-type th{
+  border-top: none;
+}
 
-/*mediaquery mobile: azzerare margine vertical nav*/
+/*mediaquery mobile: azzerare margine vertical nav, aggiustare arrows, aggiustare table, */
