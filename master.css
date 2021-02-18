@@ -1,3 +1,9 @@
+* {
+font-family: 'Poppins', sans-serif;
+font-size: 12px;
+}
+
+
 .navbar-default{
   background-color: #ffffff;
 }
@@ -250,6 +256,11 @@ li{
 .selectors{
   color: #0069FF;
   padding: 2px;
+  margin-top: 30px;
+}
+
+#carousel .selectors{
+  margin-bottom: 50px;
 }
 
 #regions{
@@ -390,8 +401,90 @@ table th{
   filter: drop-shadow(1px 2px 1px black);
 }
 
+@media all and  (max-width: 767px){
 
 
 
+  .jumbo-text h1{
+    font-size: 2.5em;
+  }
 
-/*mediaquery mobile: azzerare margine vertical nav, aggiustare arrows, aggiustare table, */
+  .jumbo-text p{
+    font-size: 1.2em;
+  }
+
+  #brands h3{
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.2em;
+  }
+
+  #deploy h2{
+    font-size: 2em;
+  }
+
+  #carousel p, #carousel span{
+    line-height: 2;
+  }
+
+  .rockerbox p{
+    font-size: 1.3em;
+    line-height: 1.5;
+  }
+
+  .vertical-navbar{
+    margin-left: 0;
+  }
+
+  .my-table .large{
+    width: 52%;
+  }
+  .squalo p{
+    width: 70%;
+  }
+}
+
+
+
+@media all and (max-width: 992px)
+and (min-width: 768px){
+  .navbar-nav{
+    display: none;
+  }
+
+  .navbar-toggle{
+    display: block;
+    margin-right: 0;
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .navbar-header{
+    width: 100%;
+  }
+
+  .col-xs-offset-1 {
+    margin-left: 0;
+  }
+}
+
+
+
+@media all and (min-width: 1200px){
+
+  div[class^="col-sm-offset"]{
+    margin-left: 0;
+  }
+
+  .col-xs-offset-1 {
+    margin-left: 0;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px){
+
+  .col-xs-offset-1 {
+    margin-left: 0;
+    }
+
+}
