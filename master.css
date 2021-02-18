@@ -1,35 +1,62 @@
+.navbar-default{
+  background-color: #ffffff;
+}
 
-.navbar-collapse.collapse{
-  display: none !important;
+#my-logo img{
+  height: 30px;
+  display: inline-block;
+}
+
+#my-logo span{
+  font-weight: 700;
+  color: #0068FF;
+}
+
+#sign-up a{
+  border: 1px solid #006aff;
+  color: #006aff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 14px;
+}
+
+#sign-up a:hover{
+  background-color:#006aff;
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #031B4E;
+  font-size: 16px;
+}
+
+.navbar-nav>li>a {
+  padding: 25px 10px;
+}
+
+.my-navbar-left{
+  margin-left: 60px;
 }
 
 .navbar-toggle{
+  color: #006aff;
+  border: none;
+  font-size: 20px;
+  margin-top: 9px;
+}
+
+button{
+  cursor: pointer;
+}
+
+ul{
+  padding-inline-start: 0;
+}
+
+li{
   display: block;
+  list-style: none;
 }
-
-@media all and (min-width: 992px){
-
-.navbar-collapse.collapse{
-  display: block !important;
-}
-
-.navbar-toggle{
-  display: none;
-}
-}
-
-#my-nav{
-  margin-bottom: 0;
-}
-
-.my-navbar{
-  margin-bottom: 0;
-}
-
-.navbar-brand{
-  margin-right: 150px;
-}
-
 
 .jumbo{
   background: url("img/bg-sea.svg");
@@ -59,11 +86,36 @@
   height: 100%;
   background-color: white;
   border-radius: 5px;
+}
 
+.form-card h2{
+  font-weight: 700;
+}
+
+.form-card a:first-of-type{
+  color: #006AFF;
 }
 
 .form-card .btn{
+  font-weight: 700;
+  color: #5B6987;
   width: 100%;
+}
+
+.btn-default:hover {
+  color: white;
+  background-color: rgba(0, 104, 255, 0.7);
+  border-color: none;
+}
+
+.btn-default:active{
+  color: white;
+  background-color: #0068FF;
+}
+
+.btn-default:active:hover{
+  color: white;
+  background-color: #0068FF;
 }
 
 .form-card .my-form{
@@ -73,6 +125,11 @@
 #brands{
   background-color: #F3F5F9;
   color: #5B6987;
+}
+
+#brands img{
+  height: 80px;
+  max-width: 100%;
 }
 
 #brands h3{
@@ -170,13 +227,12 @@
 }
 
 #carousel img{
-  width: 85%;
+  width: 100%;
 }
 
 .box{
-  position: relative;
-}
 
+}
 
 .arrow{
   display: inline-block;
@@ -184,13 +240,14 @@
   font-size: 30px;
   font-weight: 700;
   color: darkgrey;
+
 }
 
 .arrow:active{
   color: black;
 }
 
-.carousel-selector{
+.selectors{
   color: #0069FF;
   padding: 2px;
 }
@@ -238,5 +295,103 @@ table th{
 .my-table tr:first-of-type th{
   border-top: none;
 }
+
+#development{
+  background-color: #F3F5F9;
+}
+
+.rockerbox{
+  background-color: white;
+}
+
+.rockerbox img{
+  margin-top: 5%;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.rockerbox p{
+  color: #5B6987;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.rockerbox a{
+  font-weight: 700;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+
+#account{
+  background-image: url("img/bg-blue.svg");
+}
+
+#account h2{
+  color: white;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+#account button{
+  font-weight: 700;
+}
+
+#credits{
+  background-color: #010E28;
+}
+
+#credits img{
+  padding-bottom: 10px;
+}
+
+#credits p{
+  color: #5B6987;
+  font-weight: 600;
+}
+
+#credits span{
+  color: #5B6987;
+}
+
+#credits h3{
+  color: white;
+  font-weight: 700;
+}
+
+#credits li a{
+  line-height: 2;
+  color: #5B6987;
+  font-weight: 700;
+}
+
+.squalo img{
+  height: 70px;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 111;
+  bottom: 20px;
+  right: 20px;
+}
+
+.squalo p{
+  color: black;
+  font-size: 17px;
+  background-color: #ffffff;
+  width: 20%;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  z-index: 111;
+  bottom: 15px;
+  right: 110px;
+  filter: drop-shadow(1px 2px 1px black);
+}
+
+
+
+
 
 /*mediaquery mobile: azzerare margine vertical nav, aggiustare arrows, aggiustare table, */

@@ -5,98 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DigitalOcean</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="master.css">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="master.css">
   </head>
   <body>
     <header>
 
-      <nav class="my-navbar navbar navbar-default" id="my-nav">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand" id="my-logo" href="#">
+              <img src="img/digitalocean-logo-mark.svg" alt="logo">
+              <span>DigitalOcean</span>
+            </a>
+          </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav my-navbar-left">
+              <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Community <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Link</a></li>
-
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Support <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">Login</a></li>
+              <li id="sign-up"><a href="#">Sign Up</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
 </header>
 
 <main>
   <div class="jumbo">
     <div class="container">
       <div class="row items">
-        <div class="col-md-7 col-xs-12 jumbo-text">
+        <div class="col-md-7 col-sm-7 col-xs-12 jumbo-text">
           <h1>The simplest cloud platform for developers & teams</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="col-md-5 col-xs-12">
+        <div class="col-md-5 col-sm-7 col-xs-12">
 
           <div class="row form-card text-center">
-              <div class="col-md-12">
-                <h2>Deploy your app in seconds</h2>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2>Deploy your app in seconds.</h2>
               </div>
-              <div class="col-md-12">
-                <h2>Get started now.</h2>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2><a>Get started now.</a></h2>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
                 <input type="text" class="form-control my-form" aria-label="..." placeholder="Email">
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
                 <input type="text" class="form-control my-form" aria-label="..." placeholder="Password">
               </div>
-              <div class="col-md-12">
-                <button type="button" class="btn btn-default my-btn my-form">1</button>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <button type="button" class="btn btn-default my-btn my-form">Create your account</button>
               </div>
-              <div class="col-md-12">
-                <button type="button" class="btn btn-default my-btn my-form">1</button>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <button type="button" class="btn btn-default my-btn my-form">Sign un with google</button>
               </div>
-              <div class="col-md-12">
-                <p class="my-form">By signign up you agree the <span>terms of service</span></p>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <p class="my-form">By signign up you agree the <a>terms of service</a></p>
               </div>
           </div>
         </div>
@@ -122,7 +102,7 @@
         <div class="col-md-2 col-sm-2 col-xs-6 hashicorp text-center">
           <img src="img/hashicorp.svg" alt="">
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-6 hashicorp text-center">
+        <div class="col-md-2 col-sm-2 col-xs-6 wework text-center">
           <img src="img/wework.svg" alt="">
         </div>
         <div class="col-md-2 col-sm-2 col-xs-6 splunk text-center">
@@ -188,30 +168,19 @@
         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
           <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
         </div>
-        <div class="col-md-offset-2 col-sm-offset-2 col-md-8 col-sm-8 text-center">
-          <div class="box">
-            <div class="arrow">
-              <i class="fas fa-chevron-left"></i>
-            </div>
+        <div class="col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-md-6 col-sm-6 col-xs-6 text-center">
           <img src="img/page.jpg" alt="">
-          <div class="arrow">
-            <i class="fas fa-chevron-right"></i>
-          </div>
         </div>
-        </div>
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
           <span>Create compute servers in 55 seconds or less</span>
         </div>
-        <div class="col-md-12 text-center carousel-selector">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center selectors">
           <i class="fas fa-circle"></i>
           <i class="far fa-circle"></i>
           <i class="far fa-circle"></i>
           <i class="far fa-circle"></i>
-
         </div>
-
       </div>
-
     </div>
   </section>
   <section id="features">
@@ -335,14 +304,130 @@
 
       </div>
     </div>
-
-
-
-
   </section>
+  <section id="development">
+    <div class="container">
+      <div class="row title">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+          <h2>Development teams love Digitalocean</h2>
+        </div>
+      </div>
+        <div class="row items">
 
+
+            <div class="col-md-offset-3 col-sm-offset-3 col-xs-offset-2 col-md-6 col-sm-6 col-xs-8 text-center">
+                <div class="row rockerbox">
+                  <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <img src="img/rockerbox.png" alt="">
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <p>"We have been able to make scaling the technical infrastructure of our business cost effective and efficient"</p>
+                    <span><b>Rick O'Toole</b></span> <br>
+                    <span>Co-founder and CTO</span> <br>
+                    <a href="#">Read story  ></a>
+                  </div>
+                </div>
+
+              </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center selectors">
+          <i class="fas fa-circle"></i>
+          <i class="far fa-circle"></i>
+          <i class="far fa-circle"></i>
+          <i class="far fa-circle"></i>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+<footer>
+  <section id="account">
+    <div class="container">
+      <div class="row items">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+          <h2>Get started now.</h2>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+          <button type="button" class="btn btn-default my-btn"><a href="#">Create your account</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="credits">
+    <div class="container">
+      <div class="row items">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <img src="img/digitalocean-logo-mark.svg" alt="">
+          <p>© 2018 DigitalOcean, LLC. All rights reserved.</p>
+          <span>Proudly made in NY</span>
+          <div class="social">
 
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 text-left">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem Lorem Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem Lorem</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 text-left">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Lorem Lorem</a></li>
+            <li><a href="#">Lorem Lorem Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem Lorem Lorem</a></li>
+            <li><a href="#">Lorem Lorem</a></li>
+            <li><a href="#">Lorem </a></li>
+            <li><a href="#">Lorem Lorem</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 text-left">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="#">Lorem Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-12 text-left">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Lorem Lorem Lorem Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem Lorem</a></li>
+          </ul>
+        </div>
+        <div class="squalo">
+            <img src="img/squalo.png" alt="">
+            <p>Can I help answer questions you have about DigitalOcean?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   </body>
 </html>
