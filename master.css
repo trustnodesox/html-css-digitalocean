@@ -240,17 +240,34 @@ li{
 
 }
 
-.arrow{
-  display: inline-block;
-  padding: 15px;
-  font-size: 30px;
-  font-weight: 700;
-  color: darkgrey;
-
+.box-wrapper{
+  position: relative;
 }
 
-.arrow:active{
-  color: black;
+.fa-chevron-right:before {
+  content: "\f054";
+  font-size: 3em;
+  color: #5B6987;
+}
+
+.fa-chevron-left:before {
+  content: "\f053";
+  font-size: 3em;
+  color: #5B6987;
+}
+
+.arrow-left{
+  position: absolute;
+  top: 50%;
+  left: -4em;
+  transform: translateY(-50%);
+}
+
+.arrow-right{
+  position: absolute;
+  top: 50%;
+  right: -4em;
+  transform: translateY(-50%);
 }
 
 .selectors{
